@@ -70,6 +70,17 @@ html, body {
   font-family: 'Work Sans', sans-serif;
   color: var(--fg-standard);
   background: var(--bg-standard);
+  height: 100vh;
+}
+
+html {
+  display: table;
+  margin: auto;
+}
+
+body {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 h1, h2 {
@@ -98,31 +109,3 @@ p {
   margin: 1em 0;
 }
 
-
-/* ----------------------
-    Responsive adjustments
-   ---------------------- */
-
-@media (max-width: 512px) {
-  .hide-tiny {
-    display: none;
-  }
-}
-
-@media (max-width: 768px) {
-  .hide-small {
-    display: none;
-  }
-}
-
-@media not screen and (max-width: 1024px) {
-  .show-medium {
-    display: none;
-  }
-}
-
-@media (max-width: 1024px) {
-  .hide-medium {
-    display: none;
-  }
-}
