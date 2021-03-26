@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap');
+
+:root {
+  /* Colours taken from https://ethanschoonover.com/solarized/ */
+  --sol-base03:  #002b36;
+  --sol-base02:  #073642;
+  --sol-base01:  #586e75;
+  --sol-base00:  #657b83;
+  --sol-base0:   #839496;
+  --sol-base1:   #93a1a1;
+  --sol-base2:   #eee8d5;
+  --sol-base3:   #fdf6e3;
+  --sol-yellow:  #b58900;
+  --sol-orange:  #cb4b16;
+  --sol-red:     #dc322f;
+  --sol-magenta: #d33682;
+  --sol-violet:  #6c71c4;
+  --sol-blue:    #268bd2;
+  --sol-cyan:    #2aa198;
+  --sol-green:   #859900;
+
+  --sexy-radius: 16px;
+  --sexy-shadow: drop-shadow(0 0 0.75rem var(--sol-base03));
+  --bold-weight: 600;
+
+  --bg-standard: var(--sol-base3);
+  --fg-standard: var(--sol-base02);
+
+  --bg-inverse: var(--fg-standard);
+  --fg-inverse: var(--bg-standard);
+
+  --bg-emphasis: var(--sol-base2);
+}
+
+
+/* ----------------------
+    Reset (see https://alligator.io/css/minimal-css-reset/)
+   ---------------------- */
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* ----------------------
+    Basics
+   ---------------------- */
+
+html, body {
+  font-family: 'Work Sans', sans-serif;
+  color: var(--fg-standard);
+  background: var(--bg-standard);
+}
+
+h1, h2 {
+  margin: 13px 0;
+  font-size: larger;
+}
+
+h1, h2, h3, h4 {
+  font-weight: var(--bold-weight);
+}
+
+a {
+  text-decoration: none;
+  font-weight: var(--bold-weight);
+}
+
+a, a:link, a:visited {
+  color: var(--fg-standard);
+}
+
+a:hover {
+  color: var(--sol-magenta);
+}
+
+p {
+  margin: 1em 0;
+}
+
+
+/* ----------------------
+    Responsive adjustments
+   ---------------------- */
+
+@media (max-width: 512px) {
+  .hide-tiny {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .hide-small {
+    display: none;
+  }
+}
+
+@media not screen and (max-width: 1024px) {
+  .show-medium {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hide-medium {
+    display: none;
+  }
+}
